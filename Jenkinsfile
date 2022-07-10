@@ -9,5 +9,10 @@ pipeline {
       sh "ls -al"
       }
       }
+    stage ('build') {
+      steps {
+        sh ' mvn clean package'
+      }
+    }
       }
       }
