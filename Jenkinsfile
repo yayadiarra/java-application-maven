@@ -4,7 +4,7 @@ pipeline {
   maven "maven"
   }
   stages {
-    stage{
+    stage {
       steps{
       sh "ls -al"
       }
