@@ -8,7 +8,7 @@ public class HelloController {
 
 	@RequestMapping("/")
 	public String index() {
-		return "Greetings from Spring Boot!, Welcome to DevOps training school. This is the Java  Maven ";
+		return "Greetings from Spring Boot!, Welcome to DevOps training school. This is the Java  Maven webhook ";
 	}
 
 }
