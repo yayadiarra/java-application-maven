@@ -19,7 +19,7 @@ pipeline {
       steps {
        
        withDockerRegistry([ credentialsId: "Docker_hub", url: "https://index.docker.io/v1/" ]) {
-       sh 'docker build . -t $IMAGE_NAME:$VERSION -f Dockerfile'
+       sh 'docker build -t $IMAGE_NAME:$VERSION .'
        sh 'docker push $IMAGE_NAME:$VERSION'
         
         }
