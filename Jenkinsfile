@@ -6,15 +6,15 @@ pipeline {
   stages {
     stage ('clean') {
       steps{
-      sh "ls -al"
+      sh ' mvn clean'
       }
       }
-    stage ('build') {
+    stage ('build & package the app') {
       steps {
-        sh ' mvn clean package'
+        sh ' mvn package'
       }
     }
-    stage("sonar quality check"){
+    stage("sonar quality Test"){
           
             steps{
                 script{
