@@ -2,6 +2,6 @@ FROM anapsix/alpine-java
 
 # Maintainer 
 EXPOSE 8080
-LABEL maintainer="stephanie2022@gmail.com"
+LABEL maintainer="Consty"
 COPY target/*.jar /maven/yannick.jar
 CMD ["java", "-jar","/maven/yannick.jar"]
